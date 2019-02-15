@@ -2,10 +2,11 @@ package com.stackroute.javapractice2;
 
 public class Question3 {
    class  MemberVariable {
-
+        String name;
 
       public String[] isMember(String name, int age, double salary) {
-          return null;
+          String [] arr={name,String.valueOf(age),String.valueOf(salary)};
+          return arr;
       }
   }
 }

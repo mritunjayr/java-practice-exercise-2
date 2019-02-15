@@ -4,14 +4,31 @@ public class Question6 {
 
     public int average(int arr[])
     {
-        return 0;
+       int sum=0 ;
+       for(int element:arr){
+           sum+=element;
+       }
+       return sum/arr.length;
+
     }
     public int lowest(int arr[])
     {
-        return 0;
+        int minimum=arr[0] ;
+        for(int element:arr){
+            if(element<minimum)
+                minimum=element;
+        }
+        return minimum;
+
     }
     public int highest(int arr[])
     {
-        return 0;
+
+        int maximum=arr[0] ;
+        for(int element:arr){
+            if(element> maximum)
+                maximum=element;
+        }
+        return maximum;
     }
 }

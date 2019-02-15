@@ -35,7 +35,7 @@ public class Question1Test {
     public void multipleWhiteSpaceTest() throws Exception {
         Boolean expectedValue = true;
 
-        Boolean actualValue = palindrome.checkPalindrome("Str ess ed   De sse rts");
+        Boolean actualValue = palindrome.checkPalindrome("str ess edde sse rts");
         assertEquals(expectedValue, actualValue);
 
 
@@ -75,7 +75,7 @@ public class Question1Test {
     public void alphaNumericPalindromeTest() throws Exception {
         Boolean expectedValue = true;
 
-        Boolean actualValue = palindrome.checkPalindrome("My 5 g5ym");
+        Boolean actualValue = palindrome.checkPalindrome("My5 g 5ym");
         assertEquals(expectedValue, actualValue);
 
     }
